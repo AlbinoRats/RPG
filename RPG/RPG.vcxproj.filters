@@ -51,6 +51,9 @@
     <ClCompile Include="Util\Util.cpp">
       <Filter>Source Files\Util</Filter>
     </ClCompile>
+    <ClCompile Include="GameState\Splash.cpp">
+      <Filter>Source Files\GameState</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManagement\screenmanager.h">
@@ -67,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="Util\Util.h">
       <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\Splash.h">
+      <Filter>Header Files\GameState</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

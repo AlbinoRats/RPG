@@ -1,5 +1,7 @@
 #include "screenmanager.h"
 #include "../GameState/menu.h"
+#include "../GameState/Game.h"
+#include "../GameState/Splash.h"
 screenmanager::screenmanager(int width, int height, char* TITLE)
 :screen(NULL), 
 gameRunning(true),
@@ -35,8 +37,21 @@ void screenmanager::gameLoop()
 		}
 		if (currentState->isDone())
 		{
-			nextState = (STATES)currentState->getNextState();
+			STATES nextState = (STATES)currentState->getNextState();
+			if (currentState != NULL)
+			{
+				delete currentState;
+				currentState = NULL;
+			}
+			switch (nextState)
+			{
+			case SPLASH: {currentState = new Splash; break; }
+			case MENU:	{currentState = new Menu; break; }
+			case GAME: {currentState = new Game; break; }
+			}
 		}
+		
+		
 		//parameter: (screen, rectangle dimensions null=whole surface, color)
 		SDL_FillRect(SDL_GetVideoSurface(), NULL, 0xff000000);//clears screen
 		SDL_Flip(screen);//must flip in order to show in screen

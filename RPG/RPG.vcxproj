@@ -81,6 +81,7 @@
     <ClCompile Include="GameState\Game.cpp" />
     <ClCompile Include="GameState\GameState.cpp" />
     <ClCompile Include="GameState\Menu.cpp" />
+    <ClCompile Include="GameState\Splash.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Util\Util.cpp" />
   </ItemGroup>
@@ -89,6 +90,7 @@
     <ClInclude Include="GameState\Game.h" />
     <ClInclude Include="GameState\GameState.h" />
     <ClInclude Include="GameState\Menu.h" />
+    <ClInclude Include="GameState\Splash.h" />
     <ClInclude Include="Util\Util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
