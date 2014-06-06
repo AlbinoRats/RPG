@@ -19,6 +19,12 @@
     <Filter Include="Source Files\GameManagement">
       <UniqueIdentifier>{c9c1c857-58c4-4373-8b05-4f3c92a6d00e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GameState">
+      <UniqueIdentifier>{f4302b6b-7390-4c38-811f-6c2830513b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameState">
+      <UniqueIdentifier>{d7973e6f-9ab9-4fa5-9293-59c342cf6c6d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -27,10 +33,28 @@
     <ClCompile Include="GameManagement\screenmanager.cpp">
       <Filter>Source Files\GameManagement</Filter>
     </ClCompile>
+    <ClCompile Include="GameState\GameState.cpp">
+      <Filter>Source Files\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\Menu.cpp">
+      <Filter>Source Files\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState\Game.cpp">
+      <Filter>Source Files\GameState</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManagement\screenmanager.h">
       <Filter>Header Files\GameManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\GameState.h">
+      <Filter>Header Files\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\Menu.h">
+      <Filter>Header Files\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState\Game.h">
+      <Filter>Header Files\GameState</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

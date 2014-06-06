@@ -78,10 +78,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="GameManagement\screenmanager.cpp" />
+    <ClCompile Include="GameState\Game.cpp" />
+    <ClCompile Include="GameState\GameState.cpp" />
+    <ClCompile Include="GameState\Menu.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManagement\screenmanager.h" />
+    <ClInclude Include="GameState\Game.h" />
+    <ClInclude Include="GameState\GameState.h" />
+    <ClInclude Include="GameState\Menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
