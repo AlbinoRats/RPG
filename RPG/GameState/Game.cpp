@@ -1,5 +1,5 @@
 #include "Game.h"
-Game::Game()
+Game::Game()//uses gamestate header
 {
 
 }

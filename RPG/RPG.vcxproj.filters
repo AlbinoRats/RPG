@@ -25,6 +25,12 @@
     <Filter Include="Source Files\GameState">
       <UniqueIdentifier>{d7973e6f-9ab9-4fa5-9293-59c342cf6c6d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{706e6131-a349-4cb1-b26b-09fbedbc786f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{4ffdbe9e-d58d-41c1-8087-9922951d5679}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -42,6 +48,9 @@
     <ClCompile Include="GameState\Game.cpp">
       <Filter>Source Files\GameState</Filter>
     </ClCompile>
+    <ClCompile Include="Util\Util.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManagement\screenmanager.h">
@@ -55,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="GameState\Game.h">
       <Filter>Header Files\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Util.h">
+      <Filter>Header Files\Util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
