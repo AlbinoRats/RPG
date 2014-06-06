@@ -77,11 +77,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameManagement\screenmanager.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="screenmanager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="screenmanager.h" />
+    <ClInclude Include="GameManagement\screenmanager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

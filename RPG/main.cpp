@@ -1,4 +1,4 @@
-#include "screenmanager.h"
+#include "GameManagement/screenmanager.h"
 int main(int argc, char* args[])//MUST HAVE
 {
 	screenmanager manager(800, 600, "ATH IS A FAGGOT");
