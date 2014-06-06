@@ -8,6 +8,7 @@ private:
 	SDL_Surface* background;
 public:
 	Menu();
+	~Menu();
 	void Update();
 	void render();
 };
