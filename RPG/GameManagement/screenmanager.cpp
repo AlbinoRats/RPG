@@ -1,10 +1,10 @@
 #include "screenmanager.h"
-#include "GameState\menu.h"
+#include "../GameState/menu.h"
 screenmanager::screenmanager(int width, int height, char* TITLE)
 :screen(NULL), 
 gameRunning(true),
+GameState(new Menu)
 {
-	GameState(new menu);
 	SDL_Init(SDL_INIT_EVERYTHING);//starts sdl
 	atexit(SDL_Quit);//if the program crashes when the program ends, it will free up memory
 	SDL_putenv("SDL_VIDEO_WINDOW_POS=center");//environment variables. sets the position of window to the middle of the screen
