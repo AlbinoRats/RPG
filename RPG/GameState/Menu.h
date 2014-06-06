@@ -7,4 +7,6 @@ private:
 	SDL_Surface* background;
 public:
 	Menu();
+	void update();
+	void render();
 };

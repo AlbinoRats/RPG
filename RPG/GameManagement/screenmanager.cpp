@@ -3,7 +3,7 @@
 screenmanager::screenmanager(int width, int height, char* TITLE)
 :screen(NULL), 
 gameRunning(true),
-GameState(new Menu)
+currentState(new Menu)
 {
 	SDL_Init(SDL_INIT_EVERYTHING);//starts sdl
 	atexit(SDL_Quit);//if the program crashes when the program ends, it will free up memory
