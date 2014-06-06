@@ -54,6 +54,7 @@ void screenmanager::gameLoop()
 		
 		//parameter: (screen, rectangle dimensions null=whole surface, color)
 		SDL_FillRect(SDL_GetVideoSurface(), NULL, 0xff000000);//clears screen
+		currentState->render();//putting the image on
 		SDL_Flip(screen);//must flip in order to show in screen
 
 	}

@@ -5,6 +5,10 @@ nextState(-1)
 {
 	
 }
+int GameState::getNextState()
+{
+	return nextState;
+}
 bool GameState::isDone()
 {
 	return !isRunning;
