@@ -1,3 +1,4 @@
+#pragma once
 //makes a word has a value glue to it, 
 enum STATES
 {

@@ -33,6 +33,10 @@ void screenmanager::gameLoop()
 				gameRunning = false;
 			}
 		}
+		if (currentState->isDone())
+		{
+			nextState = (STATES)currentState->getNextState();
+		}
 		//parameter: (screen, rectangle dimensions null=whole surface, color)
 		SDL_FillRect(SDL_GetVideoSurface(), NULL, 0xff000000);//clears screen
 		SDL_Flip(screen);//must flip in order to show in screen

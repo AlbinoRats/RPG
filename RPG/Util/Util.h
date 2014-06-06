@@ -1,5 +1,6 @@
 #include<SDL_image.h>
 #include<SDL.h>
+#pragma once
 class Util
 {
 public:

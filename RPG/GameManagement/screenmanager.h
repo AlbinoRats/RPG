@@ -1,5 +1,6 @@
 #include "SDL.h"
-#include "../GameState\GameState.h"
+#include "../GameState/GameState.h"
+#pragma once
 class screenmanager
 {
 private:

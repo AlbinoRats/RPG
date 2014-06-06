@@ -7,7 +7,7 @@ void Game::render()
 {
 
 }
-void Game::update()
+void Game::Update()
 {
 
 }

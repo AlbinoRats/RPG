@@ -1,8 +1,9 @@
 #include "GameState.h"
+#pragma once
 class Game:public GameState
 {
 public:
 	Game();
-	void update();
+	void Update();
 	void render();
 };

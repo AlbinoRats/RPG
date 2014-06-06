@@ -7,7 +7,7 @@ void Menu::render()
 {
 
 }
-void Menu::update()
+void Menu::Update()
 {
 
 }
