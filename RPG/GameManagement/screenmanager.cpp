@@ -16,7 +16,7 @@ gameRunning(true)
 	}
 	screen = SDL_GetVideoSurface();// gets videosurface
 	SDL_EventState(SDL_MOUSEMOTION, SDL_IGNORE);//ignores mouse motion
-	currentState = new Menu();
+	currentState = new Splash();
 }
 screenmanager::~screenmanager()
 {
@@ -54,6 +54,7 @@ void screenmanager::gameLoop()
 		//parameter: (screen, rectangle dimensions null=whole surface, color)
 		SDL_FillRect(SDL_GetVideoSurface(), NULL, 0xff000000);//clears screen
 		currentState->render();//putting the image on
+		currentState->Update();
 		SDL_Flip(screen);//must flip in order to show in screen
 
 	}
