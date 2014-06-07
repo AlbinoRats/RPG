@@ -10,7 +10,7 @@ Menu::~Menu()
 }
 void Menu::render()
 {
-	SDL_BlitSurface(background, NULL, SDL_GetVideoSurface(), NULL); 
+	SDL_BlitSurface(background, NULL, SDL_GetVideoSurface(),NULL); 
 }
 void Menu::Update()
 {

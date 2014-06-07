@@ -4,8 +4,7 @@
 #include "../GameState/Splash.h"
 screenmanager::screenmanager(int width, int height, char* TITLE)
 :screen(NULL), 
-gameRunning(true),
-currentState(new Menu)
+gameRunning(true)
 {
 	SDL_Init(SDL_INIT_EVERYTHING);//starts sdl
 	atexit(SDL_Quit);//if the program crashes when the program ends, it will free up memory
@@ -17,7 +16,7 @@ currentState(new Menu)
 	}
 	screen = SDL_GetVideoSurface();// gets videosurface
 	SDL_EventState(SDL_MOUSEMOTION, SDL_IGNORE);//ignores mouse motion
-	
+	currentState = new Menu();
 }
 screenmanager::~screenmanager()
 {
