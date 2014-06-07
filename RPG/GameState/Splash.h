@@ -6,6 +6,7 @@ class Splash :public GameState
 {
 private:
 	SDL_Surface*background;
+	int timer;
 public:
 	Splash();
 	~Splash();
