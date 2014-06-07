@@ -17,7 +17,7 @@ void Splash::render()
 void Splash::Update()
 {
 	timer += 1;
-	if (timer > 1000)
+	if (timer > 150)
 	{
 		isRunning = false;
 	}

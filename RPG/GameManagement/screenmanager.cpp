@@ -25,8 +25,10 @@ screenmanager::~screenmanager()
 void screenmanager::gameLoop()
 {
 	SDL_Event event;
+	
 	while (gameRunning)
 	{
+		fpsTimer.start();
 		if (SDL_PollEvent(&event) != 0)
 		{
 			if (event.type == SDL_QUIT)//only the x
@@ -56,6 +58,9 @@ void screenmanager::gameLoop()
 		currentState->render();//putting the image on
 		currentState->Update();
 		SDL_Flip(screen);//must flip in order to show in screen
-
+		if (fpsTimer.get_ticks() < 1000 / 60)
+		{
+			SDL_Delay((1000 / 60) - fpsTimer.get_ticks());
+		}
 	}
 }
