@@ -22,15 +22,14 @@ gameRunning(true)
 screenmanager::~screenmanager()
 {
 	SDL_FreeSurface(screen);//clean up the memory located in the screen
+	input::Delete();
 }
 void screenmanager::gameLoop()
-{
-	input event;
-	
+{	
 	while (gameRunning)
 	{
 		fpsTimer.start();
-		gameRunning = event.poll();
+		gameRunning = input::Instance()->poll();
 		if (currentState->isDone())
 		{
 			STATES nextState = (STATES)currentState->getNextState();

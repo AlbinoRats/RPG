@@ -11,4 +11,5 @@ public:
 	input();
 	bool poll();
 	static input*Instance();
+	static void Delete();
 };

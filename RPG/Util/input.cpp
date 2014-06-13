@@ -1,4 +1,5 @@
 #include "input.h"
+input*input::m_instance = NULL;
 input::input()
 {
 	m_instance = this;
@@ -27,4 +28,8 @@ input*input::Instance()
 		new input();
 	}
 	return m_instance;
+}
+void input::Delete()
+{
+	delete m_instance;
 }
