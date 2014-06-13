@@ -20,3 +20,7 @@ bool input::poll()
 	}
 	return true;
 }
+input*input::Instance()
+{
+
+}
