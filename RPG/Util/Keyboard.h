@@ -7,7 +7,7 @@ private:
 public:
 	Keyboard();
 	~Keyboard();
-	void setKeyState(SDL_Event* Event);
+	void setKeyState(SDL_Event Event);
 	bool isDown(Uint16 key);
 	bool isUp(Uint16 key);
 };
