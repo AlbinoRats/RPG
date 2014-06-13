@@ -5,5 +5,7 @@ class input
 private:
 	SDL_Event event;
 public:
+	input();
+	bool poll();
 
 };

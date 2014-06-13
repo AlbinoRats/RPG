@@ -83,7 +83,7 @@
     <ClInclude Include="Util\timer.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
-    <ClInclude Include="input.h">
+    <ClInclude Include="Util\input.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
   </ItemGroup>
