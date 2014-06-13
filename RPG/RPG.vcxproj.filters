@@ -60,6 +60,9 @@
     <ClCompile Include="Util\input.cpp">
       <Filter>Source Files\Util</Filter>
     </ClCompile>
+    <ClCompile Include="Util\Keyboard.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManagement\screenmanager.h">
@@ -84,6 +87,9 @@
       <Filter>Header Files\Util</Filter>
     </ClInclude>
     <ClInclude Include="Util\input.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Keyboard.h">
       <Filter>Header Files\Util</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,6 +2,7 @@
 #include "../GameState/menu.h"
 #include "../GameState/Game.h"
 #include "../GameState/Splash.h"
+#include"../Util/input.h"
 screenmanager::screenmanager(int width, int height, char* TITLE)
 :screen(NULL), 
 gameRunning(true)
@@ -24,18 +25,12 @@ screenmanager::~screenmanager()
 }
 void screenmanager::gameLoop()
 {
-	SDL_Event event;
+	input event;
 	
 	while (gameRunning)
 	{
 		fpsTimer.start();
-		if (SDL_PollEvent(&event) != 0)
-		{
-			if (event.type == SDL_QUIT)//only the x
-			{
-				gameRunning = false;
-			}
-		}
+		gameRunning = event.poll();
 		if (currentState->isDone())
 		{
 			STATES nextState = (STATES)currentState->getNextState();

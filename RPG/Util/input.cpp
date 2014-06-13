@@ -5,11 +5,18 @@ input::input()
 }
 bool input::poll()
 {
-	if (SDL_PollEvent(&event) != 0)
+	switch (event.type)
 	{
-		if (event.type == SDL_QUIT)//only the x
+		case SDL_QUIT:
 		{
 			return false;
 		}
+		case SDL_KEYDOWN:
+		case SDL_KEYUP:
+		{
+				keyboard.setKeyState(&event);
+				break;
+		}
 	}
+	return true;
 }
