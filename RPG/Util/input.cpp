@@ -1,7 +1,7 @@
 #include "input.h"
 input::input()
 {
-
+	m_instance = this;
 }
 bool input::poll()
 {
@@ -22,5 +22,9 @@ bool input::poll()
 }
 input*input::Instance()
 {
-
+	if (m_instance == NULL)
+	{
+		new input();
+	}
+	return m_instance;
 }
