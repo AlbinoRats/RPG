@@ -16,7 +16,7 @@ Sint16 Entity::getY()
 {
 	return y;
 }
-void Entity::setX(Sint16 X) 
+void Entity::setX(Sint16 X)
 {
 	x = X;
 }
@@ -40,3 +40,12 @@ void Entity::setHeight(Sint16 H)
 {
 	height = H;
 }
+void Entity::render()
+{
+
+}
+void Entity::update()
+{
+
+}
+

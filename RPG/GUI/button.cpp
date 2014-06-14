@@ -7,6 +7,13 @@ buttonPic(NULL)
 {
 
 }
+button::~button()
+{
+	if (buttonPic != NULL)
+	{
+		SDL_FreeSurface(buttonPic);
+	}
+}
 bool button::isActive()
 {
 	return active;
@@ -14,4 +21,12 @@ bool button::isActive()
 bool button::isHover()
 {
 	return hover;
+}
+void button::render()
+{
+	SDL_BlitSurface(buttonPic, NULL, SDL_GetVideoSurface(), NULL);
+}
+void button::update()
+{
+
 }

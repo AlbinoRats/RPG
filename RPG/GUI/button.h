@@ -8,6 +8,9 @@ private:
 	SDL_Surface *buttonPic;
 public:
 	button(const char*path);
+	~button();
 	bool isActive();
 	bool isHover();
+	void render();
+	void update();
 };

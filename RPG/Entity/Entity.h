@@ -14,4 +14,6 @@ public:
 	Sint16 getHeight();
 	void setWidth(Sint16 W);
 	void setHeight(Sint16 H);
+	virtual void render() = 0;
+	virtual void update() = 0;
 };
