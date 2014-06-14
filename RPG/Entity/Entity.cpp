@@ -1,5 +1,10 @@
 #include "../Entity/Entity.h"
 Entity::Entity(SDL_Rect rect)
+:
+x(rect.x),
+y(rect.y),
+height(rect.h),
+width(rect.w)
 {
 
 }
@@ -11,7 +16,7 @@ Sint16 Entity::getY()
 {
 	return y;
 }
-void Entity::setX(Sint16 X)
+void Entity::setX(Sint16 X) 
 {
 	x = X;
 }
