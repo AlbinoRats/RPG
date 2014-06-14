@@ -37,6 +37,12 @@
     <Filter Include="Source Files\Entities">
       <UniqueIdentifier>{18e25243-c1ad-459c-83da-24d3a1b1d7da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GUI">
+      <UniqueIdentifier>{8758de34-aaaf-4a33-ab23-9151f35fa1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{7e7b98ac-113a-425a-9a4b-2b67a4fd8b9f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -72,6 +78,9 @@
     <ClCompile Include="Entity\Entity.cpp">
       <Filter>Source Files\Entities</Filter>
     </ClCompile>
+    <ClCompile Include="GUI\button.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManagement\screenmanager.h">
@@ -103,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="Entity\Entity.h">
       <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\button.h">
+      <Filter>Header Files\GUI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

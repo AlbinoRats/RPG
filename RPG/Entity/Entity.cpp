@@ -1,5 +1,5 @@
 #include "../Entity/Entity.h"
-Entity::Entity()
+Entity::Entity(SDL_Rect rect)
 {
 
 }
@@ -18,4 +18,20 @@ void Entity::setX(Sint16 X)
 void Entity::setY(Sint16 Y)
 {
 	y = Y;
+}
+Sint16 Entity::getWidth()
+{
+	return width;
+}
+Sint16 Entity::getHeight()
+{
+	return height;
+}
+void Entity::setWidth(Sint16 W)
+{
+	width = W;
+}
+void Entity::setHeight(Sint16 H)
+{
+	height = H;
 }
