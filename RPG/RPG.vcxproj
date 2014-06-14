@@ -77,6 +77,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Entity\Entity.cpp" />
     <ClCompile Include="GameManagement\screenmanager.cpp" />
     <ClCompile Include="GameState\Game.cpp" />
     <ClCompile Include="GameState\GameState.cpp" />
@@ -89,6 +90,7 @@
     <ClCompile Include="Util\Util.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Entity\Entity.h" />
     <ClInclude Include="GameManagement\screenmanager.h" />
     <ClInclude Include="GameState\Game.h" />
     <ClInclude Include="GameState\GameState.h" />

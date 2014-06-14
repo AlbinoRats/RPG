@@ -31,6 +31,12 @@
     <Filter Include="Source Files\Util">
       <UniqueIdentifier>{4ffdbe9e-d58d-41c1-8087-9922951d5679}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{441039b4-d69b-4516-ab24-ddbf0807d725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{18e25243-c1ad-459c-83da-24d3a1b1d7da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -63,6 +69,9 @@
     <ClCompile Include="Util\Keyboard.cpp">
       <Filter>Source Files\Util</Filter>
     </ClCompile>
+    <ClCompile Include="Entity\Entity.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManagement\screenmanager.h">
@@ -91,6 +100,9 @@
     </ClInclude>
     <ClInclude Include="Util\Keyboard.h">
       <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Entity.h">
+      <Filter>Header Files\Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
