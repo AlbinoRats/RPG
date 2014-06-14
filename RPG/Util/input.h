@@ -5,9 +5,10 @@ class input
 {
 private:
 	SDL_Event event;
-	Keyboard keyboard;
+	
 	static input*m_instance;// static = only ONE, shared through all the objects
 public:
+	Keyboard keyboard;
 	input();
 	bool poll();
 	static input*Instance();

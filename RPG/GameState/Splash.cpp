@@ -1,5 +1,6 @@
 #include"Splash.h"
 #include "../Util/Util.h"
+#include "../Util/input.h"
 Splash::Splash()//uses gamestate header
 {
 	timer = 0;
@@ -20,5 +21,9 @@ void Splash::Update()
 	if (timer > 150)
 	{
 		isRunning = false;
+	}
+	else if (keyboard.Instance.Keyboard.isDown(SDLK_SPACE))
+	{
+
 	}
 }
