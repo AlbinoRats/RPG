@@ -17,8 +17,8 @@ bool input::poll()
 		case SDL_KEYDOWN:
 		case SDL_KEYUP:
 		{
-						  keyboard.setKeyState(event);
-						  break;
+				keyboard.setKeyState(event);
+				break;
 		}
 		}
 		
