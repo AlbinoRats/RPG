@@ -1,7 +1,7 @@
 #include "Util.h"
 #include<iostream>
 using namespace std;
-SDL_Surface* SDL_LoadImage(char* imagePath)
+SDL_Surface* SDL_LoadImage(const char * imagePath)
 {
 	SDL_Surface*loadedImage = NULL;//loaded image
 	SDL_Surface*optimizedImage = NULL;//that will be used
