@@ -28,5 +28,8 @@ void button::render()
 }
 void button::update()
 {
-
+	if (hover&&input::Instance()->keyboard.isDown(SDLK_RETURN))
+	{
+		active = true;
+	}
 }

@@ -1,6 +1,7 @@
 #include <SDL.h>
 #include"../Entity/Entity.h"
 #include"../Util/Util.h"
+#include"../Util/input.h"
 class button:public Entity
 {
 private:
