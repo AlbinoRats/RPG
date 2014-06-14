@@ -22,8 +22,12 @@ void Splash::Update()
 	{
 		isRunning = false;
 	}
-	else if (keyboard.Instance.Keyboard.isDown(SDLK_SPACE))
+	else if (input::Instance()->keyboard.isDown(SDLK_SPACE))
 	{
-
+		isRunning = false;
+	}
+	else if (input::Instance()->keyboard.isDown(SDLK_RETURN))
+	{
+		isRunning = false;
 	}
 }
